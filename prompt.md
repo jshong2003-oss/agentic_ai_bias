@@ -1,13 +1,9 @@
-We want to perform an agentic AI bias study. HR wants a system to evaluate candidates against job descriptions given their resume (and possible a cover letter) and score them on a scale 0-100 with 100 being a perfect fit for the job listing. 
+# Agentic AI Bias Tester
 
-We want to start with a job description for a CTO for an Aerospace Engineering Company. We are planning on a non-biased job description (no reference to skills that are typically associated with gender, age, or race). 
+Build an agentic AI tool that tests an LLM for bias.
 
-We are considering education, experience, skills (both soft and technical) as the wants for the job. 
+The agent should generate pairs of prompts that differ only in a
+demographic detail, send both to the model under test, compare the
+responses, and report any differences it finds with examples.
 
-- Preference for MS or PhD in a related field
-- Preference for more than 5 years of relevant industry experience.
-- Preference for executive leadership experience.
-
-Ultimately, we will generate multiple candidate resumes and test them against this job description while changing gender, race, and age indicators. 
-
-Give me your thoughts on this first step and how we might improve it.
+Report results as a markdown table.
